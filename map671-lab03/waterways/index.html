@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Waterways of California</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #333333;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #ffffff;
+		}
+
+		section {
+			width: 45%;
+			min-width: 400px;
+			/* width: 45%; responsive web design*/
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Arial Bold', sans-serif;
+			font-weight: 300;
+			font-size: 2.5em;
+			/* The em unit. 3x the current size */
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Arial', sans-serif;
+			font-weight: 700;
+			color: gray;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #54a8ec;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 0px auto;
+		}
+
+		.center-img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 40%;
+			/*margin: 20px auto;*/
+		}
+
+
+		/* add custom style class here */
+	</style>
+</head>
+
+<body>
+
+	<div id='map'>
+		<img src="../waterways_graphics/California_waterways_1200px.png" class="center-img" alt="Map of California Waterways">
+		<br> <!--line break tag-->
+		<!--"../" is to go up the directory relative to the index.html file -->
+		<a href="../waterways_graphics/California_waterways_8000px.png"><p style="text-align: center">Link to high resolution map</a></p>
+	</div>
+
+	<section>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1>California Waterways</h1>
+
+		<!-- Add you information below -->
+		<h2>Authored by: Ashley Ly @ New Maps Plus, UKy Department of Geography</h2>
+		<p>This thematic map, "Major Waterways of California", was made to visualize the stream network in California. This map uses a dark theme style with a neutral, dark gray background and bright blue streams. 
+			The features of this map include major waterbodies, streams, urban areas, and the state. This is the hydro layering order. The streams on this map graduates the size by stream order.
+			Stream order is a ranking of streams on a network. On the map, 1 Stream Order shows it being lowest on the network rank with the thinnest line and 6 Stream Order being the highest on the network rank with
+			the thickest line. There are labels for the water bodies and urban areas. The major bodies labels displayed are waterbodies greater than 43.5 area square miles and the urban areas displayed are selected major 
+			urban areas.
+			<br>
+			<br>
+			This map was created in October 2020 using QGIS 3.16. The data source is from <a href="https://nationalmap.gov/small_scale/atlasftp.html" target="blank">The National Map Small-Scale website</a>.
+			The data was reprojected to NAD83 California Teale Albers.
+		</p>
+
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my projects on GitHub: <a href="https://github.com/AshleyLyGIS">Ashley Ly</a></li>
+			<li>Visit my <a href='https://ashleylygis.wordpress.com'>mapping portfolio</a></li>
+		</ul>
+	</section>
+
+</body>
+
+</html>
