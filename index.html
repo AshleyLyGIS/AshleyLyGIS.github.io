@@ -54,16 +54,42 @@
       </div>
     </header>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src='images/map672-final-project-full.png' class='img-fluid'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a target="_blank" href="https://ashleylygis.github.io/california-landfills/">
+              <button type="button" class="btn btn-primary">View map</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Projects Section -->
     <section id="projects" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a target="_blank" href="https://ashleylygis.github.io/california-landfills/"><img class="card-img-top" src="images/map672-final-project-preview.PNG" alt="Map of California Landfills"></a>
+              <a data-toggle="modal" data-target="#exampleModal"
+                  href="https://ashleylygis.github.io/california-landfills/">
+                <img class="card-img-top" src="images/map672-final-project-preview.PNG" alt="Map of California Landfills"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">California Landfills</a>
+                  <a target="_blank" 
+                     href="#">California Landfills</a>
                 </h4>
                 <p class="card-text">A proportional symbol map of open and closed landfills in California based waste tonnage.</p>
               </div>
