@@ -54,12 +54,12 @@
       </div>
     </header>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- California Landfill Modal -->
+    <div class="modal fade" id="landfillModal" tabindex="-1" aria-labelledby="landfillModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="landfillModalLabel">California Landfills</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -77,13 +77,82 @@
       </div>
     </div>
 
+    <!-- Wind Turbine Modal -->
+    <div class="modal fade" id="windTurbineModal" tabindex="-1" aria-labelledby="windTurbineModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="windTurbineModalLabel">US Wind Turbines</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src='images/map671-final-project-full.png' class='img-fluid'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a target="_blank" href="https://ashleylygis.github.io/us-wind-turbines/">
+              <button type="button" class="btn btn-primary">View map</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- US Rent 2015 Modal -->
+    <div class="modal fade" id="usRent2015Modal" tabindex="-1" aria-labelledby="sRent2015Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sRent2015Label">US Rent 2015</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src='images/map672-lab09-full.PNG' class='img-fluid'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a target="_blank" href="maps\map672-lab09\index.html">
+              <button type="button" class="btn btn-primary">View map</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- California Waterways Modal -->
+    <div class="modal fade" id="waterwaysModal" tabindex="-1" aria-labelledby="waterwaysModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="waterwaysModalLabel">California Waterways</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src='images/map671-lab03-full.PNG' class='img-fluid'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a target="_blank" href="maps\map671-lab03\waterways\index.html">
+              <button type="button" class="btn btn-primary">View map</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Projects Section -->
     <section id="projects" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a data-toggle="modal" data-target="#exampleModal"
+              <a data-toggle="modal" data-target="#landfillModal"
                   href="https://ashleylygis.github.io/california-landfills/">
                 <img class="card-img-top" src="images/map672-final-project-preview.PNG" alt="Map of California Landfills"></a>
               <div class="card-body">
@@ -97,10 +166,13 @@
           </div>
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a target="_blank" href="https://ashleylygis.github.io/us-wind-turbines/"><img class="card-img-top" src="images/map671-final-project-preview.PNG" alt="Map of US Wind Turbines"></a>
+              <a data-toggle="modal" data-target="#windTurbineModal"
+                 href="https://ashleylygis.github.io/us-wind-turbines/">
+                <img class="card-img-top" src="images/map671-final-project-preview.PNG" alt="Map of US Wind Turbines"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">US Wind Turbines</a>
+                  <a target="_blank" 
+                     href="https://ashleylygis.github.io/us-wind-turbines/">US Wind Turbines</a>
                 </h4>
                 <p class="card-text">A mapbox web map displaying US wind turbine locations and wind turbine heights.</p>
               </div>
@@ -108,10 +180,12 @@
           </div>
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a target="_blank" href="maps\map672-lab09\index.html"><img class="card-img-top" src="images/map672-lab09-preview.PNG" alt="Map of US Median Rent 2014"></a>
+              <a data-toggle="modal" data-target="#usRent2015Modal"
+                 href="maps\map672-lab09\index.html"><img class="card-img-top" src="images/map672-lab09-preview.PNG" alt="Map of US Median Rent 2014"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">US Rent Prices in 2015</a>
+                  <a target="_blank" 
+                     href="maps\map672-lab09\index.html">US Rent Prices in 2015</a>
                 </h4>
                 <p class="card-text">A map of the average income per person in each county of the United States.</p>
               </div>
@@ -119,10 +193,12 @@
           </div>
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a target="_blank" href="maps\map671-lab03\waterways\index.html"><img class="card-img-top" src="images/map671-lab03-preview.PNG" alt="Map of Calfornia Waterways"></a>
+              <a data-toggle="modal" data-target="#waterwaysModal"
+                  href="maps\map671-lab03\waterways\index.html"><img class="card-img-top" src="images/map671-lab03-preview.PNG" alt="Map of Calfornia Waterways"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">California Waterways</a>
+                  <a target="_blank" 
+                     href="maps\map671-lab03\waterways\index.html">California Waterways</a>
                 </h4>
                 <p class="card-text">A map of Caliornia's major waterway streams by volume.</p>
               </div>
